@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="crt">
+      <UniqueIdentifier>{920e2615-773e-4cbc-919c-ff4e1684da5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xor">
+      <UniqueIdentifier>{4f184431-e7b2-40ce-a1d4-7900d4779105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{36c50187-88a4-495b-9af6-09de1a642bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spoofer">
+      <UniqueIdentifier>{b21f7b4d-e03b-49f8-95bc-530c78796c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{6cc664fe-d6a3-4cd1-9209-465a15d3f45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Structs">
+      <UniqueIdentifier>{aa4eff2a-730e-4e9e-a8f5-4990fb17dcd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\objects">
+      <UniqueIdentifier>{7ea69cce-e419-4571-a845-43db9df1a1af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Gui">
+      <UniqueIdentifier>{1a6628e7-e312-428f-8a37-49a20c629310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{a38c5c97-a5d9-47ba-974a-38dcb7688f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\discord">
+      <UniqueIdentifier>{5bc02ab3-8c2e-4519-ad56-63c5f38a881e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crt.h">
+      <Filter>crt</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.h">
+      <Filter>xor</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof\syscall.h">
+      <Filter>spoofer</Filter>
+    </ClInclude>
+    <ClInclude Include="spoof\spoof_call.h">
+      <Filter>spoofer</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Structs\Structs.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Structs\Objects.h">
+      <Filter>SDK\objects</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Functions.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Gui.h">
+      <Filter>SDK\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\anya_hook.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\hde\hde32_disasm.hpp">
+      <Filter>lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="lib\anya_hook.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="spoof\call.asm">
+      <Filter>spoofer</Filter>
+    </MASM>
+    <MASM Include="spoof\direct.asm">
+      <Filter>spoofer</Filter>
+    </MASM>
+    <MASM Include="spoof\syscall.asm">
+      <Filter>spoofer</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
